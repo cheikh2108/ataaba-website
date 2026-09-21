@@ -51,9 +51,9 @@ export default function MentionsLegalesPage() {
                   <p className="font-semibold text-cyan-400">ATAABA EXPERTISE</p>
                   <ul className="space-y-1 ml-4">
                     <li>Forme juridique : [À compléter]</li>
-                    <li>Siège social : Almadies 2, Rufisque, Dakar, Sénégal</li>
+                    <li>Siège social : Fayenne Dangou Nord, Rufisque, Sénégal</li>
                     <li>NINEA : [À compléter]</li>
-                    <li>Téléphone : +221 78 751 72 72 / +221 76 806 88 87</li>
+                    <li>Téléphone : +221 78 751 72 72 / +221 77 451 12 33</li>
                     <li>Email : contact@ataabaexpertise.com</li>
                     <li>Directeur de la publication : Amadou Bamba CISS</li>
                   </ul>
@@ -172,8 +172,8 @@ export default function MentionsLegalesPage() {
                   </p>
                   <ul className="space-y-1 ml-4">
                     <li>Par email : <a href="mailto:contact@ataabaexpertise.com" className="text-cyan-400 hover:underline">contact@ataabaexpertise.com</a></li>
-                    <li>Par téléphone : +221 78 751 72 72 / +221 76 806 88 87</li>
-                    <li>Par courrier : Almadies 2, Rufisque, Dakar, Sénégal</li>
+                    <li>Par téléphone : +221 78 751 72 72 / +221 77 451 12 33</li>
+                    <li>Par courrier : Fayenne Dangou Nord, Rufisque, Sénégal</li>
                   </ul>
                 </div>
               </section>

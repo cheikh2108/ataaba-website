@@ -24,11 +24,11 @@ export default function Footer() {
             <div className="flex flex-col gap-2 text-xs text-zinc-500">
               <div className="flex items-center gap-2">
                 <IconifyIcon icon="solar:map-point-linear" className="text-cyan-400" />
-                <span>Almadies 2, Rufisque, Dakar, Sénégal</span>
+                <span>Fayenne Dangou Nord, Rufisque, Sénégal</span>
               </div>
               <div className="flex items-center gap-2">
                 <IconifyIcon icon="solar:phone-linear" className="text-cyan-400" />
-                <span>+221 78 751 72 72 / +221 76 806 88 87</span>
+                <span>+221 78 751 72 72 / +221 77 451 12 33</span>
               </div>
               <div className="flex items-center gap-2">
                 <IconifyIcon icon="solar:letter-linear" className="text-cyan-400" />

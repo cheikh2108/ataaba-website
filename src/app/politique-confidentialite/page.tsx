@@ -59,9 +59,9 @@ export default function PolitiqueConfidentialitePage() {
                   </p>
                   <ul className="space-y-1 ml-4">
                     <li><strong className="text-cyan-400">ATAABA EXPERTISE</strong></li>
-                    <li>Adresse : Almadies 2, Rufisque, Dakar, Sénégal</li>
+                    <li>Adresse : Fayenne Dangou Nord, Rufisque, Sénégal</li>
                     <li>Email : contact@ataabaexpertise.com</li>
-                    <li>Téléphone : +221 78 751 72 72 / +221 76 806 88 87</li>
+                    <li>Téléphone : +221 78 751 72 72 / +221 77 451 12 33</li>
                   </ul>
                 </div>
               </section>
@@ -283,8 +283,8 @@ export default function PolitiqueConfidentialitePage() {
                   </p>
                   <ul className="space-y-1 ml-4">
                     <li>Email : <a href="mailto:contact@ataabaexpertise.com" className="text-cyan-400 hover:underline">contact@ataabaexpertise.com</a></li>
-                    <li>Téléphone : +221 78 751 72 72 / +221 76 806 88 87</li>
-                    <li>Adresse : Almadies 2, Rufisque, Dakar, Sénégal</li>
+                    <li>Téléphone : +221 78 751 72 72 / +221 77 451 12 33</li>
+                    <li>Adresse : Fayenne Dangou Nord, Rufisque, Sénégal</li>
                   </ul>
                 </div>
               </section>

@@ -209,7 +209,7 @@ export default function ContactPage() {
                       <div className="space-y-5">
                         {/* Adresse */}
                         <a
-                          href="https://maps.google.com/?q=Almadies+2+Rufisque+Dakar+Senegal"
+                          href="https://maps.google.com/?q=Fayenne+Dangou+Nord+Rufisque+Senegal"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="group flex items-start gap-4 text-zinc-400 hover:text-cyan-400 transition-colors"
@@ -222,8 +222,8 @@ export default function ContactPage() {
                               Adresse
                             </div>
                             <div className="text-sm font-light leading-relaxed">
-                              Almadies 2, Rufisque<br />
-                              Dakar, Sénégal
+                              Fayenne Dangou Nord<br />
+                              Rufisque, Sénégal
                             </div>
                           </div>
                         </a>
@@ -252,7 +252,7 @@ export default function ContactPage() {
                             className="group flex items-start gap-4 text-zinc-400 hover:text-cyan-400 transition-colors pl-14"
                           >
                             <div className="text-sm font-light">
-                              +221 76 806 88 87
+                              +221 77 451 12 33
                             </div>
                           </a>
                         </div>
