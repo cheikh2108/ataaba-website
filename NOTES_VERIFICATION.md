@@ -45,6 +45,8 @@
 
 ### Fichier: `src/components/TrustedBy.tsx`
 
+**⚠️ STATUT:** **Temporairement en commentaire** (dans `src/app/page.tsx`)
+
 **Contenu actuel:** Noms fictifs entre crochets `[ONG Partenaire 1]`, etc.
 
 ### ✅ Actions requises:
@@ -70,6 +72,12 @@
    - Au moins 3-4 vraies références vérifiables
    - Diversité de secteurs (ONG, entreprise, institution)
    - Mix projets récents (2024-2025) et anciens (2023)
+
+5. **Décommenter la section après remplissage:**
+   - Dans `src/app/page.tsx`, ligne ~13: décommenter `import TrustedBy`
+   - Dans `src/app/page.tsx`, ligne ~74: décommenter `<TrustedBy />`
+   - Supprimer la note orange dans `TrustedBy.tsx` (lignes 106-118)
+   - Rebuild: `npm run build`
 
 ---
 

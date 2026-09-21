@@ -13,7 +13,7 @@ import ExperienceSection from '@/components/ExperienceSection'
 import SolutionsJourneys from '@/components/SolutionsJourneys'
 import WhyATAABA from '@/components/WhyATAABA'
 import ProjectsPreview from '@/components/ProjectsPreview'
-import TrustedBy from '@/components/TrustedBy'
+// import TrustedBy from '@/components/TrustedBy' // À décommenter après avoir les autorisations clients
 import FinalCTA from '@/components/FinalCTA'
 import Footer from '@/components/Footer'
 import GSAPAnimations from '@/components/GSAPAnimations'
@@ -73,7 +73,9 @@ export default function Home() {
 
       <ProjectsPreview />
 
-      <TrustedBy />
+      {/* <TrustedBy /> */}
+      {/* ⚠️ Section "Ils nous ont fait confiance" temporairement cachée */}
+      {/* À décommenter après avoir obtenu les autorisations clients et rempli les vrais noms */}
 
       <FinalCTA />
 
