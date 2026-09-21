@@ -59,14 +59,14 @@ export default function AboutPage() {
               </h1>
 
               <p className="text-base md:text-lg text-zinc-400 leading-relaxed max-w-3xl font-thin mb-12">
-                Plus de 14 ans d'expertise au service de la transformation digitale des organisations en Afrique.
+                Plus de 14 ans d'expérience de notre fondateur au service de la transformation digitale des organisations en Afrique.
                 Nous concevons des solutions innovantes qui répondent aux défis réels du terrain.
               </p>
 
               <div className="flex flex-wrap gap-4">
                 <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-zinc-900/50 border border-zinc-800">
                   <IconifyIcon icon="solar:calendar-linear" className="text-cyan-400 text-sm" />
-                  <span className="text-xs text-zinc-400 font-light">14+ années</span>
+                  <span className="text-xs text-zinc-400 font-light">14+ ans (fondateur)</span>
                 </div>
                 <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-zinc-900/50 border border-zinc-800">
                   <IconifyIcon icon="solar:briefcase-linear" className="text-cyan-400 text-sm" />

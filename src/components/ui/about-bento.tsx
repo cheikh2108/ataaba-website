@@ -22,7 +22,7 @@ export function AboutBento() {
             IMPACT EN CHIFFRES
           </h2>
           <p className="text-sm md:text-base text-zinc-300 leading-relaxed max-w-2xl font-thin">
-            Plus d'une décennie d'expertise au service de projets d'envergure internationale.
+            L'expertise de notre fondateur au service de projets d'envergure internationale.
           </p>
         </div>
 
@@ -51,12 +51,12 @@ export function AboutBento() {
               <h3 className="text-4xl md:text-5xl font-thin text-zinc-100 tracking-tighter leading-[1.1]">
                 14+ années
                 <br />
-                <span className="text-zinc-500">d'expérience</span>
+                <span className="text-zinc-500">d'expérience<br />du fondateur</span>
               </h3>
             </div>
             <div className="mt-8 relative z-10">
               <p className="text-base md:text-lg text-zinc-400 leading-relaxed font-thin">
-                Une expertise reconnue dans l'accompagnement de 50+ projets complexes.
+                ATAABA Expertise s'appuie sur plus de 14 ans d'expérience professionnelle de son fondateur dans la gestion de projets, le suivi-évaluation, les systèmes d'information et l'accompagnement des organisations.
               </p>
             </div>
           </Card>
@@ -121,15 +121,17 @@ export function AboutBento() {
             </div>
           </Card>
 
-          {/* Dark System Card */}
-          <Card className="bg-zinc-900/50 rounded-lg p-8 text-zinc-100 flex flex-col justify-center gap-3 border border-zinc-800/50 backdrop-blur-sm">
-            <div className="size-9 rounded-lg bg-cyan-400/10 border border-cyan-400/30 flex items-center justify-center">
-              <div className="size-3 bg-cyan-400 rounded-full shadow-[0_0_8px_rgba(34,211,238,0.6)]" />
+          {/* Sectors Card */}
+          <Card className="bg-zinc-900/50 rounded-lg p-8 text-zinc-100 flex flex-col justify-between border border-zinc-800/50 backdrop-blur-sm">
+            <span className="text-[10px] font-mono font-semibold uppercase tracking-widest text-zinc-500">
+              Secteurs
+            </span>
+            <div className="space-y-2">
+              <span className="text-5xl md:text-6xl font-thin tracking-tighter">9</span>
+              <p className="text-xs font-light leading-relaxed text-zinc-400">
+                D'activité<br />couverts
+              </p>
             </div>
-            <h4 className="text-base font-light leading-tight text-zinc-300">Neural Grid</h4>
-            <p className="text-[10px] text-zinc-600 font-mono uppercase tracking-wider">
-              V2.4.0
-            </p>
           </Card>
         </div>
       </div>

@@ -11,6 +11,7 @@ import AboutBento from '@/components/ui/about-bento'
 import SolutionsPhares from '@/components/SolutionsPhares'
 import ExperienceSection from '@/components/ExperienceSection'
 import SolutionsJourneys from '@/components/SolutionsJourneys'
+import WhyATAABA from '@/components/WhyATAABA'
 import ProjectsPreview from '@/components/ProjectsPreview'
 import FinalCTA from '@/components/FinalCTA'
 import Footer from '@/components/Footer'
@@ -66,6 +67,8 @@ export default function Home() {
       <ExperienceSection />
 
       <SolutionsJourneys />
+
+      <WhyATAABA />
 
       <ProjectsPreview />
 

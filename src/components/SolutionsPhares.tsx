@@ -120,7 +120,7 @@ export default function SolutionsPhares() {
         </div>
 
         {/* CTA */}
-        <div className="gsap-fade-up flex flex-col sm:flex-row gap-4 items-center justify-center">
+        <div className="gsap-fade-up flex flex-col sm:flex-row flex-wrap gap-4 items-center justify-center">
           <a
             href="/services"
             className="group inline-flex items-center gap-3 px-8 py-4 rounded-lg border border-zinc-800 bg-zinc-950/50 text-zinc-100 hover:bg-zinc-900 hover:border-cyan-400/50 transition-all duration-200 active:scale-[0.97]"
@@ -139,6 +139,16 @@ export default function SolutionsPhares() {
               Demander une démonstration
             </span>
             <IconifyIcon icon="solar:play-circle-bold" className="text-lg transition-transform group-hover:scale-110" />
+          </a>
+
+          <a
+            href="/contact"
+            className="group inline-flex items-center gap-3 px-8 py-4 rounded-lg border border-cyan-400 bg-transparent text-cyan-400 hover:bg-cyan-400/10 transition-all duration-200 active:scale-[0.97]"
+          >
+            <span className="text-xs tracking-widest font-semibold uppercase">
+              Demander un devis
+            </span>
+            <IconifyIcon icon="solar:document-text-bold" className="text-lg transition-transform group-hover:scale-110" />
           </a>
         </div>
       </div>

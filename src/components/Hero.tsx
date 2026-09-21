@@ -38,11 +38,13 @@ export default function Hero() {
       </div>
 
       <p className="gsap-scroll-element text-sm md:text-base text-zinc-400 max-w-[22rem] sm:max-w-lg leading-relaxed mb-6 font-thin">
-        ATAABA accompagne les entreprises, ONG, institutions et entrepreneurs dans la gestion de leurs projets et leur transformation digitale grâce à des solutions technologiques adaptées à leurs besoins.
+        ATAABA Expertise accompagne les entreprises, ONG, institutions, entrepreneurs et particuliers dans la gestion de leurs projets et leur transformation digitale grâce à son expertise en pilotage stratégique, suivi-évaluation et à des solutions technologiques innovantes adaptées à leurs besoins.
       </p>
 
       <div className="gsap-scroll-element flex flex-wrap items-center gap-2 mb-12 text-xs text-zinc-500 font-light">
-        <span>Gestion de projets</span>
+        <span>Pilotage stratégique</span>
+        <IconifyIcon icon="solar:close-linear" className="text-zinc-700 text-xs" />
+        <span>Suivi-évaluation</span>
         <IconifyIcon icon="solar:close-linear" className="text-zinc-700 text-xs" />
         <span>Solutions digitales</span>
         <IconifyIcon icon="solar:close-linear" className="text-zinc-700 text-xs" />
