@@ -8,7 +8,7 @@ export default function WhatsAppButton() {
 
   // Numéro WhatsApp ATAABA (format international sans +)
   const phoneNumber = '221787517272'
-  const message = encodeURIComponent('Bonjour ATAABA, je souhaite en savoir plus sur vos solutions digitales.')
+  const message = encodeURIComponent('Bonjour ATAABA 👋, je souhaite en savoir plus sur vos services en gestion et suivi-évaluation de projets ainsi que sur vos solutions digitales. Pouvez-vous m\'accompagner selon mes besoins ?')
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`
 
   return (
