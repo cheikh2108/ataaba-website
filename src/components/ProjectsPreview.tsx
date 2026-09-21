@@ -39,15 +39,14 @@ export default function ProjectsPreview() {
       <div className="max-w-5xl border-t border-zinc-900 pt-16">
         <div className="gsap-fade-up flex items-center gap-3 mb-10">
           <span className="text-xs tracking-widest text-cyan-400 uppercase font-light">
-            PROJETS RÉCENTS
+            NOS PRODUITS
           </span>
           <div className="h-[1px] w-12 bg-cyan-400/30"></div>
         </div>
 
         <h2 className="gsap-fade-up tracking-tighter text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[0.9] text-zinc-100 mb-8 md:mb-16 select-none font-thin">
-          <span className="italic font-extralight text-zinc-500">NOS</span>
-          <br />
-          RÉALISATIONS
+          Solutions<br />
+          <span className="italic font-extralight text-zinc-500">déployées.</span>
         </h2>
 
         <div className="space-y-0">

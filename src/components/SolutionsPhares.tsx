@@ -49,10 +49,10 @@ export default function SolutionsPhares() {
     },
     {
       name: 'NAATALIX',
-      description: 'Plateforme e-commerce complète pour boutiques en ligne et marketplaces',
-      category: 'E-commerce',
-      icon: 'solar:bag-4-bold',
-      features: ['Boutique en ligne', 'Paiement mobile', 'Livraison']
+      description: 'Gestion commerciale complète : ventes, achats, stocks, clients, fournisseurs, dépenses, créances et rentabilité',
+      category: 'Gestion Commerciale',
+      icon: 'solar:cart-large-bold',
+      features: ['Ventes & Achats', 'Gestion stocks', 'Créances & Dettes']
     }
   ]
 

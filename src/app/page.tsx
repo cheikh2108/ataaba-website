@@ -13,6 +13,7 @@ import ExperienceSection from '@/components/ExperienceSection'
 import SolutionsJourneys from '@/components/SolutionsJourneys'
 import WhyATAABA from '@/components/WhyATAABA'
 import ProjectsPreview from '@/components/ProjectsPreview'
+import TrustedBy from '@/components/TrustedBy'
 import FinalCTA from '@/components/FinalCTA'
 import Footer from '@/components/Footer'
 import GSAPAnimations from '@/components/GSAPAnimations'
@@ -71,6 +72,8 @@ export default function Home() {
       <WhyATAABA />
 
       <ProjectsPreview />
+
+      <TrustedBy />
 
       <FinalCTA />
 

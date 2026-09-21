@@ -19,8 +19,8 @@ export default function ExperienceSection() {
   const steps: ExperienceStep[] = [
     {
       number: '01',
-      title: 'Expertise Certifiée',
-      description: 'Une équipe d\'experts qualifiés avec plus de 14 ans d\'expérience dans la gestion de 50+ projets complexes.',
+      title: 'Expertise Confirmée',
+      description: 'Une équipe multidisciplinaire mobilisant des compétences complémentaires, portée par plus de 14 ans d\'expérience professionnelle du fondateur.',
       image: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=800&auto=format&fit=crop'
     },
     {

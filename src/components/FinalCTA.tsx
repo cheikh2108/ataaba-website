@@ -31,7 +31,7 @@ export default function FinalCTA() {
                 <span className="text-cyan-400">EN RÉALITÉ.</span>
               </h2>
               <p className="text-sm md:text-base text-zinc-400 leading-relaxed max-w-xl font-thin mb-8">
-                9 secteurs. 19 solutions. Une décennie d'expertise au service de votre transformation digitale.
+                9 secteurs. 19 solutions. Une expertise multidisciplinaire au service de votre transformation digitale.
                 Parlons de votre projet.
               </p>
             </div>
