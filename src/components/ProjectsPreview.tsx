@@ -8,26 +8,26 @@ export default function ProjectsPreview() {
     {
       id: 'proj-001',
       number: '01',
-      name: 'Plateforme ATAABA',
-      category: 'Gestion de Projets',
+      name: 'Planora360',
+      category: 'Gestion de Projets & Suivi-Évaluation',
       year: '2024',
-      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop'
+      image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=800&auto=format&fit=crop'
     },
     {
       id: 'proj-002',
       number: '02',
-      name: 'Digitalisation des processus',
-      category: 'Transformation Digitale',
+      name: 'SALIHA HEALTH',
+      category: 'Gestion Hospitalière & Santé',
       year: '2024',
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop'
+      image: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=800&auto=format&fit=crop'
     },
     {
       id: 'proj-003',
       number: '03',
-      name: 'Formation en ligne',
-      category: 'Éducation',
-      year: '2023',
-      image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=800&auto=format&fit=crop'
+      name: 'GoodRH',
+      category: 'Ressources Humaines & Paie',
+      year: '2025',
+      image: 'https://images.unsplash.com/photo-1556761175-4b46a572b786?q=80&w=800&auto=format&fit=crop'
     }
   ]
 

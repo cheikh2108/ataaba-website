@@ -61,7 +61,7 @@ export default function MobileNav() {
       {/* Backdrop overlay */}
       {isOpen && (
         <div
-          className="md:hidden fixed inset-0 z-40 bg-black/60 backdrop-blur-sm"
+          className="md:hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-md"
           onClick={() => setIsOpen(false)}
           aria-hidden="true"
         />
@@ -69,7 +69,7 @@ export default function MobileNav() {
 
       {/* Mobile drawer menu */}
       <nav
-        className={`md:hidden fixed top-0 right-0 bottom-0 z-50 w-72 bg-[#09090B] border-l border-zinc-900 transition-transform duration-300 ease-out ${
+        className={`md:hidden fixed top-0 right-0 bottom-0 z-50 w-72 bg-[#09090B] border-l border-zinc-800 shadow-2xl transition-transform duration-300 ease-out ${
           isOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
         aria-label="Navigation mobile"

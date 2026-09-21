@@ -241,8 +241,8 @@ export default function SolutionsJourneys() {
                   className="journey-img object-cover"
                   style={{ willChange: 'transform' }}
                   sizes="(max-width: 1024px) 80vw, 440px"
-                  priority={index < 3}
-                  loading={index < 3 ? 'eager' : 'lazy'}
+                  priority={index < 6}
+                  loading="eager"
                 />
                 {/* Gradient overlay */}
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#09090B]/90" />
@@ -288,12 +288,13 @@ export default function SolutionsJourneys() {
           <div className={`flex-shrink-0 w-[85vw] md:w-[560px] flex flex-col justify-center ${isMobile ? 'snap-center' : ''}`}>
             <div className="flex items-center gap-3 mb-5">
               <span className="text-xs tracking-widest text-cyan-400/70 uppercase font-light">
-                / ET BIEN PLUS
+                / PARLONS-EN
               </span>
               <div className="h-[1px] w-12 bg-cyan-400/30"></div>
             </div>
             <h2 className="text-2xl sm:text-3xl md:text-6xl lg:text-7xl font-thin tracking-tighter leading-[0.95] text-zinc-100 mb-6 md:mb-8">
-              Vous hésitez?<br />Nous aussi.
+              Vous avez un besoin?<br />
+              <span className="text-zinc-500 italic font-extralight">Construisons la solution adaptée.</span>
             </h2>
             <a
               href="/contact"

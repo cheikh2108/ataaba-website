@@ -37,10 +37,21 @@ export default function Hero() {
         <div className="h-[1px] flex-1 bg-gradient-to-l from-zinc-700 to-transparent"></div>
       </div>
 
-      <p className="gsap-scroll-element text-sm md:text-base text-zinc-400 max-w-[22rem] sm:max-w-md leading-relaxed mb-12 font-thin">
-        Chez ATAABA, nous nous engageons à être votre partenaire de confiance dans la gestion de vos projets,
-        en apportant expertise, innovation et une approche rigoureuse à chaque mission.
+      <p className="gsap-scroll-element text-sm md:text-base text-zinc-400 max-w-[22rem] sm:max-w-lg leading-relaxed mb-6 font-thin">
+        ATAABA accompagne les entreprises, ONG, institutions et entrepreneurs dans la gestion de leurs projets et leur transformation digitale grâce à des solutions technologiques adaptées à leurs besoins.
       </p>
+
+      <div className="gsap-scroll-element flex flex-wrap items-center gap-2 mb-12 text-xs text-zinc-500 font-light">
+        <span>Gestion de projets</span>
+        <IconifyIcon icon="solar:close-linear" className="text-zinc-700 text-xs" />
+        <span>Solutions digitales</span>
+        <IconifyIcon icon="solar:close-linear" className="text-zinc-700 text-xs" />
+        <span>Développement web & mobile</span>
+        <IconifyIcon icon="solar:close-linear" className="text-zinc-700 text-xs" />
+        <span>Conseil</span>
+        <IconifyIcon icon="solar:close-linear" className="text-zinc-700 text-xs" />
+        <span>Formation</span>
+      </div>
 
       <div className="gsap-scroll-element flex flex-wrap items-center gap-4">
         {/* Primary CTA */}

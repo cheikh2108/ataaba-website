@@ -6,9 +6,9 @@ import MobileNav from '@/components/MobileNav'
 import Pagination from '@/components/Pagination'
 import Hero from '@/components/Hero'
 // import Stats from '@/components/Stats' // Section removed
-import SystemCard from '@/components/SystemCard'
 import LogoStrip from '@/components/LogoStrip'
 import AboutBento from '@/components/ui/about-bento'
+import SolutionsPhares from '@/components/SolutionsPhares'
 import ExperienceSection from '@/components/ExperienceSection'
 import SolutionsJourneys from '@/components/SolutionsJourneys'
 import ProjectsPreview from '@/components/ProjectsPreview'
@@ -19,6 +19,7 @@ import DecorativeLines from '@/components/DecorativeLines'
 import GrainOverlay from '@/components/GrainOverlay'
 import ScrollProgress from '@/components/ScrollProgress'
 import LoaderCounter from '@/components/LoaderCounter'
+import WhatsAppButton from '@/components/WhatsAppButton'
 
 export default function Home() {
   return (
@@ -32,6 +33,8 @@ export default function Home() {
       </a>
 
       <LoaderCounter />
+
+      <WhatsAppButton />
 
       <GrainOverlay />
 
@@ -52,17 +55,13 @@ export default function Home() {
         <Hero />
 
         <Pagination />
-
-        <SystemCard />
       </main>
-
-      <div className="gsap-scroll-element mt-8 md:mt-16 px-4 sm:px-6 md:pl-32 lg:pl-48 max-w-5xl relative z-20">
-        <SystemCard isMobile />
-      </div>
 
       <LogoStrip />
 
       <AboutBento />
+
+      <SolutionsPhares />
 
       <ExperienceSection />
 

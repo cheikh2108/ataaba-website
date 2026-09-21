@@ -75,17 +75,17 @@ export default function Footer() {
 
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <span className="text-[10px] tracking-widest font-light text-zinc-500 uppercase">
-            ATAABA EXPERTISE © 2025
+            ATAABA EXPERTISE © 2026
           </span>
           <div className="flex items-center gap-8">
-            <a href="#" className="text-[10px] tracking-widest text-zinc-500 hover:text-cyan-400 transition-colors uppercase font-thin">
-              TERMS
+            <a href="/mentions-legales" className="text-[10px] tracking-widest text-zinc-500 hover:text-cyan-400 transition-colors uppercase font-thin">
+              Mentions légales
             </a>
-            <a href="#" className="text-[10px] tracking-widest text-zinc-500 hover:text-cyan-400 transition-colors uppercase font-thin">
-              PRIVACY
+            <a href="/politique-confidentialite" className="text-[10px] tracking-widest text-zinc-500 hover:text-cyan-400 transition-colors uppercase font-thin">
+              Politique de confidentialité
             </a>
-            <a href="#" className="text-[10px] tracking-widest text-zinc-500 hover:text-cyan-400 transition-colors uppercase font-thin">
-              STATUS
+            <a href="/conditions-generales" className="text-[10px] tracking-widest text-zinc-500 hover:text-cyan-400 transition-colors uppercase font-thin">
+              Conditions générales
             </a>
           </div>
         </div>
