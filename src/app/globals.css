@@ -1,0 +1,371 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-inter: 'Inter', sans-serif;
+  --font-jetbrains-mono: 'JetBrains Mono', monospace;
+  --bg-primary: #ffffff;
+  --bg-secondary: #fafafa;
+  --bg-tertiary: #f4f4f5;
+  --text-primary: #18181b;
+  --text-secondary: #52525b;
+  --text-tertiary: #71717a;
+  --border-light: #e4e4e7;
+  --border-medium: #d4d4d8;
+  --accent-cyan: #06b6d4;
+}
+
+body {
+  font-family: var(--font-inter);
+  background-color: var(--bg-primary);
+}
+
+/* ============================================
+   ACCESSIBILITY & UX IMPROVEMENTS
+   ============================================ */
+
+/* Skip link - visible only on focus */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.focus\:not-sr-only:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  padding: inherit;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}
+
+/* Global focus styles for better keyboard navigation */
+a:focus-visible,
+button:focus-visible,
+[role="button"]:focus-visible {
+  outline: 2px solid #22d3ee;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Ensure sufficient color contrast for text */
+.text-contrast-safe {
+  color: #a1a1aa; /* zinc-400 - meets WCAG AA */
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Custom animations and effects */
+.stat-number {
+  font-variant-numeric: tabular-nums;
+  text-shadow: 0 0 0 rgba(34, 211, 238, 0);
+  transition: text-shadow 0.35s ease, color 0.35s ease;
+}
+
+.stat-number.is-counting {
+  color: #f4f4f5;
+  text-shadow: 0 0 18px rgba(34, 211, 238, 0.28);
+}
+
+.card-image {
+  transition: transform 0.7s ease, filter 0.7s ease;
+  will-change: transform;
+}
+
+.system-card:hover .card-image {
+  transform: scale(1.06) translateX(2px);
+  filter: grayscale(1) contrast(1.35);
+}
+
+.card-progress-value {
+  font-variant-numeric: tabular-nums;
+  transition: color 0.35s ease, text-shadow 0.35s ease;
+}
+
+.card-progress-value.is-counting {
+  color: #f4f4f5;
+  text-shadow: 0 0 16px rgba(34, 211, 238, 0.35);
+}
+
+.card-progress-fill {
+  width: 0%;
+  transition: box-shadow 0.35s ease;
+}
+
+.card-progress-fill.is-filling {
+  box-shadow: 0 0 16px rgba(34, 211, 238, 0.55);
+}
+
+/* Logo strip effects */
+@keyframes logo-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes logo-scan {
+  0%, 100% {
+    transform: translateX(-120%);
+    opacity: 0;
+  }
+  20%, 80% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(120%);
+    opacity: 0;
+  }
+}
+
+.logo-marquee-track {
+  animation: logo-marquee 26s linear infinite;
+  will-change: transform;
+}
+
+.logo-strip:hover .logo-marquee-track {
+  animation-play-state: paused;
+}
+
+.logo-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent, rgba(34, 211, 238, 0.16), transparent);
+  animation: logo-scan 4.5s ease-in-out infinite;
+  pointer-events: none;
+}
+
+/* CTA button effects */
+.cta-shell {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  animation: cta-glow 3.2s ease-in-out infinite;
+}
+
+.cta-shell::before {
+  content: "";
+  position: absolute;
+  inset: -140%;
+  z-index: 0;
+  background: conic-gradient(from 0deg,
+    transparent 0deg,
+    transparent 95deg,
+    rgba(34, 211, 238, 0.95) 135deg,
+    rgba(255, 255, 255, 0.45) 150deg,
+    rgba(34, 211, 238, 0.75) 165deg,
+    transparent 210deg,
+    transparent 360deg);
+  animation: cta-border-spin 4s linear infinite;
+}
+
+.cta-shell:hover::before {
+  animation-duration: 1.8s;
+}
+
+.cta-shell > button {
+  position: relative;
+  z-index: 1;
+}
+
+/* System card effects */
+.system-card {
+  isolation: isolate;
+}
+
+.system-card::before {
+  content: "";
+  position: absolute;
+  top: -20%;
+  bottom: -20%;
+  left: 0;
+  width: 38%;
+  z-index: 20;
+  background: linear-gradient(90deg, transparent, rgba(34, 211, 238, 0.18), transparent);
+  animation: card-border-scan 5.8s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.card-status-dot {
+  animation: card-status-pulse 2.1s ease-in-out infinite;
+  transform-origin: center;
+}
+
+/* Orbital overlay effects */
+@keyframes orbital-drift {
+  0%, 100% {
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 0.48;
+  }
+  50% {
+    transform: translate3d(-1.2%, 0.8%, 0) scale(1.02);
+    opacity: 0.72;
+  }
+}
+
+@keyframes orbital-dash {
+  to {
+    stroke-dashoffset: -240;
+  }
+}
+
+@keyframes orbital-pulse {
+  0%, 100% {
+    opacity: 0.18;
+    transform: scale(0.97);
+  }
+  50% {
+    opacity: 0.56;
+    transform: scale(1.035);
+  }
+}
+
+.orbital-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.84;
+  mix-blend-mode: screen;
+  overflow: hidden;
+  mask-image: linear-gradient(90deg, transparent 0%, transparent 42%, rgba(0, 0, 0, 0.55) 58%, black 100%);
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, transparent 42%, rgba(0, 0, 0, 0.55) 58%, black 100%);
+}
+
+.orbital-stage {
+  position: absolute;
+  top: 0;
+  left: calc(73vw - 146vh);
+  width: 200vh;
+  height: 100vh;
+}
+
+.orbital-bg svg {
+  width: 100%;
+  height: 100%;
+  animation: orbital-drift 12s ease-in-out infinite;
+  transform-origin: 72% 52%;
+  will-change: transform, opacity;
+}
+
+.orbital-line {
+  fill: none;
+  stroke: rgba(34, 211, 238, 0.48);
+  stroke-width: 0.075;
+  stroke-dasharray: 12 22;
+  animation: orbital-dash 9s linear infinite;
+  will-change: stroke-dashoffset;
+}
+
+.orbital-line.thin {
+  stroke: rgba(255, 255, 255, 0.09);
+  stroke-width: 0.045;
+  stroke-dasharray: 3 17;
+  animation-duration: 14s;
+}
+
+.orbital-core {
+  fill: rgba(34, 211, 238, 0.10);
+  stroke: rgba(34, 211, 238, 0.28);
+  stroke-width: 0.05;
+  animation: orbital-pulse 5.2s ease-in-out infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+  will-change: transform, opacity;
+}
+
+/* Sector cards hover effects */
+.sector-icon {
+  transition: border-color 0.5s ease, box-shadow 0.5s ease;
+}
+
+.sector-icon:hover,
+.group:hover .sector-icon {
+  box-shadow: 0 0 20px rgba(34, 211, 238, 0.15);
+}
+
+.group:hover .sector-icon svg {
+  color: var(--icon-color, #22d3ee);
+}
+
+/* Line color on hover */
+.group:hover [style*="--line-color"] {
+  background: linear-gradient(to right, transparent, var(--line-color), transparent) !important;
+  opacity: 0.5;
+}
+
+/* Emil Design Engineering - Button Feedback & Accessibility */
+
+/* Focus states for keyboard navigation */
+a:focus-visible, 
+button:focus-visible,
+[role="button"]:focus-visible {
+  outline: 2px solid #22d3ee;
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+
+/* Active states for tactile feedback */
+@media (hover: hover) and (pointer: fine) {
+  a:active:not(nav a),
+  button:active,
+  [role="button"]:active,
+  .cursor-pointer:active {
+    transform: scale(0.97);
+    transition: transform 160ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  /* Navigation items: no scale, just opacity */
+  nav a:active {
+    transform: none;
+    opacity: 0.7;
+  }
+}
+
+/* Touch device protection - no transform on touch */
+@media (hover: none) {
+  .hover\:translate-x-1,
+  .hover\:translate-x-5,
+  .hover\:-translate-y-1,
+  .group-hover\:translate-x-1,
+  .group-hover\:translate-x-5,
+  .group-hover\:-translate-y-1 {
+    transform: none !important;
+  }
+}
+
+/* Hover states only on devices that support hover */
+@media (hover: hover) and (pointer: fine) {
+  .system-card:hover .card-image {
+    transform: scale(1.06) translateX(2px);
+    filter: grayscale(1) contrast(1.35);
+  }
+}
+
+/* Improved text contrast for accessibility */
+body {
+  color: #d4d4d8; /* zinc-300 instead of zinc-400 for better contrast */
+}
