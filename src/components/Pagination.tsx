@@ -2,7 +2,7 @@ import IconifyIcon from './IconifyIcon'
 
 export default function Pagination() {
   return (
-    <div className="gsap-pagination hidden lg:flex fixed right-8 top-1/2 -translate-y-1/2 flex-col gap-6 items-center z-30">
+    <div className="gsap-pagination hidden lg:flex fixed right-8 top-1/2 -translate-y-1/2 flex-col gap-6 items-center z-40">
       <div className="flex flex-col items-center gap-2">
         <span className="text-xs text-cyan-400 tracking-widest font-thin font-mono">
           01

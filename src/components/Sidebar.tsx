@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function Sidebar() {
   return (
-    <aside className="gsap-sidebar hidden md:flex fixed left-0 top-0 flex-col justify-between items-center w-20 md:w-24 h-screen border-r border-zinc-900 py-10 shrink-0 z-30 bg-[#09090B]/50 backdrop-blur-sm">
+    <aside className="gsap-sidebar hidden md:flex fixed left-0 top-0 flex-col justify-between items-center w-20 md:w-24 h-screen border-r border-zinc-900 py-10 shrink-0 z-40 bg-[#09090B]/50 backdrop-blur-sm">
       <div className="flex flex-col items-center mb-8">
         <a
           href="/"

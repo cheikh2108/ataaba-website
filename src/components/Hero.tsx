@@ -4,7 +4,7 @@ import IconifyIcon from './IconifyIcon'
 
 export default function Hero() {
   return (
-    <section className="flex-1 flex flex-col justify-start pt-24 md:pt-10 px-4 sm:px-6 md:pl-32 lg:pl-48 md:pr-6 lg:pr-12 max-w-5xl relative z-20 min-h-screen pb-[10vh]" id="main-content">
+    <section className="flex-1 flex flex-col justify-start pt-24 md:pt-10 px-4 sm:px-6 md:pl-32 lg:pl-48 md:pr-6 lg:pr-12 max-w-5xl relative min-h-screen pb-[10vh]" id="main-content">
       <div className="gsap-scroll-element flex items-center gap-3 mb-8">
         <span className="text-xs tracking-widest text-cyan-400 uppercase font-light">
           GESTION DE PROJETS

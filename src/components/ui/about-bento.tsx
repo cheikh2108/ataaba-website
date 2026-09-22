@@ -114,7 +114,7 @@ export function AboutBento() {
               Solutions
             </span>
             <div className="space-y-2">
-              <span className="text-5xl md:text-6xl font-thin tracking-tighter">19</span>
+              <span className="text-5xl md:text-6xl font-thin tracking-tighter">18</span>
               <p className="text-xs font-light leading-relaxed opacity-80">
                 Digitales<br />adaptées
               </p>
