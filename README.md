@@ -15,7 +15,7 @@ Site web moderne Next.js 14 pour ATAABA EXPERTISE, entreprise spécialisée en g
 
 - ✅ Design responsive (mobile-first)
 - ✅ Navigation mobile avec burger menu
-- ✅ 9 secteurs d'activité / 19 solutions digitales
+- ✅ 9 secteurs d'activité / 18 solutions digitales
 - ✅ Page Formations avec 6 cours + formulaire d'inscription
 - ✅ Blog / Ressources avec articles détaillés
 - ✅ Section À propos avec fondateur

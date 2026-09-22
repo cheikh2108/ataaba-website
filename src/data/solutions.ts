@@ -38,9 +38,9 @@ export const sectors: Sector[] = [
         description: 'Gestion et suivi des projets, activités, budgets, recommandations, performances et passation de marchés.',
         status: 'ready',
         icon: 'solar:chart-2-linear',
-        url: 'https://planora360.com',
+        url: 'https://planora360.org',
         features: ['Gestion projets', 'Suivi budgets', 'Passation marchés', 'Reporting'],
-        image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&q=80',
+        image: '/projects/planora360.png',
         year: '2023',
         tagline: 'La gestion de projet pensée pour les ONG et institutions.'
       },
@@ -52,7 +52,7 @@ export const sectors: Sector[] = [
         icon: 'solar:users-group-rounded-linear',
         url: 'https://goodrh.com',
         features: ['Gestion personnel', 'Congés', 'Présences', 'Documents RH'],
-        image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&q=80',
+        image: '/projects/goodrh.png',
         year: '2023',
         tagline: 'Votre service RH, digitalisé et simplifié.'
       },
@@ -62,9 +62,9 @@ export const sectors: Sector[] = [
         description: 'Gestion financière et comptable : recettes, dépenses, budgets, trésorerie et reporting.',
         status: 'ready',
         icon: 'solar:wallet-money-linear',
-        url: 'https://finora360.com',
+        url: 'https://finora360.org',
         features: ['Comptabilité', 'Trésorerie', 'Budgets', 'Reporting'],
-        image: 'https://images.unsplash.com/photo-1554224311-beee460c201a?w=1200&q=80',
+        image: '/projects/finora360.png',
         year: '2024',
         tagline: 'Maîtrisez vos finances avec transparence et précision.'
       },
@@ -97,7 +97,7 @@ export const sectors: Sector[] = [
         icon: 'solar:card-linear',
         url: 'https://paytrack.sn',
         features: ['Ventes', 'Paiements', 'Crédits', 'Suivi boutiques'],
-        image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80',
+        image: '/projects/paytrack.png',
         year: '2023',
         tagline: 'Encaissez, gérez, prospérez.'
       },
@@ -181,9 +181,9 @@ export const sectors: Sector[] = [
         description: 'Gestion et valorisation des biens et opportunités immobilières.',
         status: 'ready',
         icon: 'solar:home-2-linear',
-        url: 'https://immoclair.com',
+        url: 'https://immoclair.org',
         features: ['Catalogue biens', 'Visites', 'Contrats', 'Suivi clients'],
-        image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&q=80',
+        image: '/projects/immoclair.png',
         year: '2023',
         tagline: 'L\'immobilier en toute transparence.'
       },
@@ -193,9 +193,9 @@ export const sectors: Sector[] = [
         description: 'Structuration, analyse et suivi des projets d\'investissement.',
         status: 'ready',
         icon: 'solar:graph-up-linear',
-        url: 'https://projetinvest.com',
+        url: 'https://projetinvest.org',
         features: ['Analyse ROI', 'Suivi projets', 'Reporting', 'Tableaux de bord'],
-        image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80',
+        image: '/projects/projetinvest.png',
         year: '2024',
         tagline: 'Investissez avec intelligence et confiance.'
       },
@@ -273,18 +273,6 @@ export const sectors: Sector[] = [
     icon: 'solar:users-group-rounded-bold',
     color: 'green',
     solutions: [
-      {
-        id: 'tfc-supporters',
-        name: 'TFC Supporters',
-        description: 'Plateforme dédiée à la gestion et à l\'animation d\'une communauté de supporters.',
-        status: 'ready',
-        icon: 'solar:flag-linear',
-        url: 'https://tfcsupporters.com',
-        features: ['Membres', 'Événements', 'Billetterie', 'Boutique'],
-        image: 'https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=1200&q=80',
-        year: '2023',
-        tagline: 'Rassemblez votre communauté. Vivez votre passion.'
-      },
       {
         id: 'branchemoi',
         name: 'BrancheMoi',

@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     default: 'ATAABA EXPERTISE | Gestion de Projets & Solutions Digitales',
     template: '%s | ATAABA EXPERTISE'
   },
-  description: 'ATAABA EXPERTISE accompagne les organisations dans leur transformation digitale. 14+ ans d\'expérience, 50+ projets, 9 secteurs, 19 solutions innovantes en suivi-évaluation, systèmes d\'information et gestion de projets.',
+  description: 'ATAABA EXPERTISE accompagne les organisations dans leur transformation digitale. 14+ ans d\'expérience, 50+ projets, 9 secteurs, 18 solutions innovantes en suivi-évaluation, systèmes d\'information et gestion de projets.',
   keywords: ['ATAABA', 'suivi-évaluation', 'gestion de projets', 'systèmes d\'information', 'DHIS2', 'Power BI', 'transformation digitale', 'conseil', 'formation', 'Sénégal', 'Dakar', 'Afrique'],
   authors: [{ name: 'ATAABA EXPERTISE', url: 'https://ataabaexpertise.com' }],
   creator: 'ATAABA EXPERTISE',
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     url: 'https://ataabaexpertise.com',
     siteName: 'ATAABA EXPERTISE',
     title: 'ATAABA EXPERTISE | Gestion de Projets & Solutions Digitales',
-    description: 'ATAABA EXPERTISE accompagne les organisations dans leur transformation digitale. 14+ ans d\'expérience, 50+ projets, 9 secteurs, 19 solutions innovantes.',
+    description: 'ATAABA EXPERTISE accompagne les organisations dans leur transformation digitale. 14+ ans d\'expérience, 50+ projets, 9 secteurs, 18 solutions innovantes.',
     images: [
       {
         url: '/og-image.png',
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'ATAABA EXPERTISE | Gestion de Projets & Solutions Digitales',
-    description: '14+ ans d\'expérience, 50+ projets, 9 secteurs, 19 solutions innovantes en transformation digitale.',
+    description: '14+ ans d\'expérience, 50+ projets, 9 secteurs, 18 solutions innovantes en transformation digitale.',
     images: ['/og-image.png'],
     creator: '@AtaabaExpertise',
   },

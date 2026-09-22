@@ -217,7 +217,7 @@ export default function SolutionsJourneys() {
             </div>
             <h2 className="text-2xl sm:text-3xl md:text-6xl lg:text-7xl font-thin tracking-tighter leading-[0.95] text-zinc-100 mb-4 md:mb-6">
               9 secteurs.<br />
-              <span className="text-zinc-500 italic font-extralight">19 solutions.</span>
+              <span className="text-zinc-500 italic font-extralight">18 solutions.</span>
             </h2>
             <p className="text-sm md:text-base text-zinc-400 leading-relaxed max-w-md font-thin">
               Des solutions digitales adaptées aux réalités et besoins de chaque secteur d'activité.

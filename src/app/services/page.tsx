@@ -1,5 +1,6 @@
 'use client'
 
+import { useState, useMemo } from 'react'
 import Link from 'next/link'
 import Sidebar from '@/components/Sidebar'
 import MobileNav from '@/components/MobileNav'
@@ -10,8 +11,21 @@ import ScrollProgress from '@/components/ScrollProgress'
 import DecorativeLines from '@/components/DecorativeLines'
 import { sectors, getStats } from '@/data/solutions'
 
+type FilterType = 'all' | 'ready' | 'development'
+
 export default function ServicesPage() {
   const stats = getStats()
+  const [activeFilter, setActiveFilter] = useState<FilterType>('all')
+
+  // Filtrer les secteurs selon le filtre actif
+  const filteredSectors = useMemo(() => {
+    if (activeFilter === 'all') return sectors
+
+    return sectors.map(sector => ({
+      ...sector,
+      solutions: sector.solutions.filter(solution => solution.status === activeFilter)
+    })).filter(sector => sector.solutions.length > 0) // Ne garder que les secteurs avec des solutions
+  }, [activeFilter])
 
   return (
     <>
@@ -36,7 +50,7 @@ export default function ServicesPage() {
               <h1 className="tracking-tighter text-3xl sm:text-4xl md:text-6xl lg:text-7xl leading-[0.9] text-zinc-100 mb-6 md:mb-8 select-none font-thin">
                 <span className="italic font-extralight text-zinc-500">9 secteurs.</span>
                 <br />
-                19 SOLUTIONS DIGITALES
+                18 SOLUTIONS DIGITALES
               </h1>
 
               <p className="text-base md:text-lg text-zinc-400 leading-relaxed max-w-3xl font-thin mb-12">
@@ -44,15 +58,64 @@ export default function ServicesPage() {
                 Explorez nos solutions par secteur.
               </p>
 
-              <div className="flex flex-wrap gap-4">
-                <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-cyan-400/10 border border-cyan-400/30">
-                  <div className="size-2 rounded-full bg-cyan-400 shadow-[0_0_8px_rgba(34,211,238,0.6)]"></div>
-                  <span className="text-xs text-zinc-400 font-light">{stats.readySolutions} solutions prêtes</span>
-                </div>
-                <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/10 border border-amber-500/30">
-                  <div className="size-2 rounded-full bg-amber-500"></div>
-                  <span className="text-xs text-zinc-400 font-light">{stats.devSolutions} en développement</span>
-                </div>
+              <div className="flex flex-wrap gap-3">
+                {/* Filtre: Tous */}
+                <button
+                  onClick={() => setActiveFilter('all')}
+                  className={`group flex items-center gap-2 px-4 py-2.5 rounded-lg transition-all duration-300 ${
+                    activeFilter === 'all'
+                      ? 'bg-zinc-100 border-2 border-zinc-100 shadow-[0_0_20px_rgba(255,255,255,0.1)]'
+                      : 'bg-zinc-900/50 border border-zinc-800 hover:border-zinc-700 hover:bg-zinc-900'
+                  }`}
+                >
+                  <span className={`text-xs font-light transition-colors ${
+                    activeFilter === 'all' ? 'text-zinc-900 font-semibold' : 'text-zinc-400 group-hover:text-zinc-300'
+                  }`}>
+                    Tous ({stats.totalSolutions})
+                  </span>
+                </button>
+
+                {/* Filtre: Solutions prêtes */}
+                <button
+                  onClick={() => setActiveFilter('ready')}
+                  className={`group flex items-center gap-2 px-4 py-2.5 rounded-lg transition-all duration-300 ${
+                    activeFilter === 'ready'
+                      ? 'bg-cyan-400/20 border-2 border-cyan-400 shadow-[0_0_20px_rgba(34,211,238,0.2)]'
+                      : 'bg-cyan-400/10 border border-cyan-400/30 hover:bg-cyan-400/15 hover:border-cyan-400/50'
+                  }`}
+                >
+                  <div className={`size-2 rounded-full transition-all ${
+                    activeFilter === 'ready'
+                      ? 'bg-cyan-400 shadow-[0_0_8px_rgba(34,211,238,0.8)] scale-110'
+                      : 'bg-cyan-400 shadow-[0_0_8px_rgba(34,211,238,0.6)]'
+                  }`}></div>
+                  <span className={`text-xs font-light transition-colors ${
+                    activeFilter === 'ready' ? 'text-cyan-300 font-semibold' : 'text-zinc-400 group-hover:text-cyan-400'
+                  }`}>
+                    {stats.readySolutions} solutions prêtes
+                  </span>
+                </button>
+
+                {/* Filtre: En développement */}
+                <button
+                  onClick={() => setActiveFilter('development')}
+                  className={`group flex items-center gap-2 px-4 py-2.5 rounded-lg transition-all duration-300 ${
+                    activeFilter === 'development'
+                      ? 'bg-amber-500/20 border-2 border-amber-500 shadow-[0_0_20px_rgba(245,158,11,0.2)]'
+                      : 'bg-amber-500/10 border border-amber-500/30 hover:bg-amber-500/15 hover:border-amber-500/50'
+                  }`}
+                >
+                  <div className={`size-2 rounded-full transition-all ${
+                    activeFilter === 'development'
+                      ? 'bg-amber-500 scale-110'
+                      : 'bg-amber-500'
+                  }`}></div>
+                  <span className={`text-xs font-light transition-colors ${
+                    activeFilter === 'development' ? 'text-amber-400 font-semibold' : 'text-zinc-400 group-hover:text-amber-400'
+                  }`}>
+                    {stats.devSolutions} en développement
+                  </span>
+                </button>
               </div>
             </div>
           </section>
@@ -60,8 +123,18 @@ export default function ServicesPage() {
           {/* Sectors Grid */}
           <section className="relative px-4 sm:px-6 md:pl-32 lg:pl-48 md:pr-6 lg:pr-12 pb-32">
             <div className="max-w-6xl">
+              {/* Message si aucun résultat */}
+              {filteredSectors.length === 0 && (
+                <div className="text-center py-20">
+                  <IconifyIcon icon="solar:folder-open-linear" className="text-6xl text-zinc-700 mb-4 mx-auto" />
+                  <p className="text-zinc-500 font-light">
+                    Aucune solution trouvée pour ce filtre
+                  </p>
+                </div>
+              )}
+
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {sectors.map((sector, index) => (
+                {filteredSectors.map((sector) => (
                   <Link
                     key={sector.id}
                     href={`/services/${sector.slug}`}
