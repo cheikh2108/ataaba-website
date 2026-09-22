@@ -5,7 +5,7 @@ import React from "react"
 
 export function AboutBento() {
   return (
-    <section className="relative z-10 px-4 sm:px-6 md:pl-32 lg:pl-48 md:pr-6 lg:pr-12 py-12 md:py-20">
+    <section className="relative px-4 sm:px-6 md:pl-32 lg:pl-48 md:pr-6 lg:pr-12 py-12 md:py-20">
       <div className="max-w-6xl border-t border-zinc-900 pt-16">
         {/* Header */}
         <div className="flex items-center gap-3 mb-10">

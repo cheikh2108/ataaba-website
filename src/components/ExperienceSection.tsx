@@ -105,7 +105,7 @@ export default function ExperienceSection() {
   return (
     <section
       ref={sectionRef}
-      className="relative z-10 px-4 sm:px-6 md:pl-32 lg:pl-48 md:pr-6 lg:pr-12 py-12 md:py-20"
+      className="relative px-4 sm:px-6 md:pl-32 lg:pl-48 md:pr-6 lg:pr-12 py-12 md:py-20"
     >
       <div className="max-w-6xl border-t border-zinc-900 pt-16">
         {/* Header */}

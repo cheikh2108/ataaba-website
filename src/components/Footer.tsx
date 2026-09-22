@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function Footer() {
   return (
-    <footer className="relative z-10 px-4 sm:px-6 md:pl-32 lg:pl-48 md:pr-6 lg:pr-12 py-12 md:py-20 border-t border-zinc-900/80 bg-zinc-950 overflow-hidden">
+    <footer className="relative px-4 sm:px-6 md:pl-32 lg:pl-48 md:pr-6 lg:pr-12 py-12 md:py-20 border-t border-zinc-900/80 bg-zinc-950 overflow-hidden">
       <div className="absolute top-0 left-1/4 w-1/2 h-[1px] bg-gradient-to-r from-transparent via-cyan-400/20 to-transparent"></div>
       <div className="max-w-5xl flex flex-col gap-8 md:gap-16 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-10">

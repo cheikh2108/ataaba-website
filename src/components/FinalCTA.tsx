@@ -9,7 +9,7 @@ export default function FinalCTA() {
       </div>
 
       {/* Final CTA Section */}
-      <section className="relative z-10 px-4 sm:px-6 md:pl-32 lg:pl-48 md:pr-6 lg:pr-12 pb-12 md:pb-20 pt-8 md:pt-10">
+      <section className="relative px-4 sm:px-6 md:pl-32 lg:pl-48 md:pr-6 lg:pr-12 pb-12 md:pb-20 pt-8 md:pt-10">
         <div className="max-w-6xl border-t border-zinc-900 pt-16">
           {/* Header */}
           <div className="flex items-center gap-3 mb-10">

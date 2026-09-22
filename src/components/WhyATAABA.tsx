@@ -32,7 +32,7 @@ export default function WhyATAABA() {
   ]
 
   return (
-    <section className="relative z-10 px-4 sm:px-6 md:pl-32 lg:pl-48 md:pr-6 lg:pr-12 py-12 md:py-20 bg-zinc-950/30">
+    <section className="relative px-4 sm:px-6 md:pl-32 lg:pl-48 md:pr-6 lg:pr-12 py-12 md:py-20 bg-zinc-950/30">
       <div className="max-w-6xl">
         {/* Header */}
         <div className="gsap-fade-up flex items-center gap-3 mb-10">

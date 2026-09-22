@@ -50,10 +50,10 @@ export default function Home() {
 
       <OrbitalOverlay />
 
-      <main id="main-content" className="relative z-10 flex w-full">
-        <Sidebar />
-        <MobileNav />
+      <Sidebar />
+      <MobileNav />
 
+      <main id="main-content" className="relative z-10 flex w-full">
         <Hero />
 
         <Pagination />

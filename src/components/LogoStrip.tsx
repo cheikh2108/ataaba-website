@@ -4,7 +4,7 @@ export default function LogoStrip() {
   const companies = ['Gestion de Projets', 'Transformation Digitale', 'Formation', 'Immobilier', 'Conseil', 'Solutions IT']
 
   return (
-    <section className="relative z-10 px-4 sm:px-6 md:pl-32 lg:pl-48 md:pr-6 lg:pr-12 py-8 md:py-12 overflow-hidden">
+    <section className="relative px-4 sm:px-6 md:pl-32 lg:pl-48 md:pr-6 lg:pr-12 py-8 md:py-12 overflow-hidden">
       <div className="max-w-6xl border-t border-zinc-900 pt-6">
         <p className="mb-5 text-xs tracking-[0.34em] text-zinc-600 uppercase font-thin font-mono">
           Nos domaines d'expertise
